@@ -15,7 +15,7 @@ jQuery(document).ready(function() {
     jQuery("#hamburger").click(function() {
 
         //set the width of primary content container -> content should not scale while animating
-        var contentWidth = jQuery('#container').width();
+        var contentWidth = jQuery('#content').width();
 
         //show the menu
         jQuery('nav').css('display', 'block');
@@ -46,7 +46,7 @@ jQuery(document).ready(function() {
         jQuery("#container").animate({"marginLeft": ["0", 'easeOutExpo']}, {
             duration: 700,
             complete: function() {
-                  jQuery('#content').css('width', '100%');
+                  jQuery('#content').css('width', 'auto');
                 jQuery('#contentLayer').css('display', 'none');
 
             }

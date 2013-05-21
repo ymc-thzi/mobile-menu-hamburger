@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Mobile Menu Hamburger</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <!--Using jQuery and jQuery UI for display effects-->
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
@@ -19,6 +19,15 @@
     <!--This wrapping container is used to get the width of the whole content-->
     <div id="container">
 
+        <!--The Hamburger Button in the Header-->
+        <header>
+            <div id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+
         <!--The mobile navigation Markup hidden via css-->
         <nav class="mobileNav">
             <ul>
@@ -30,15 +39,6 @@
                 <li><a href="#">menuitem 6</a></li>
             </ul>
         </nav>
-
-        <!--The Hamburger Button in the Header-->
-        <header>
-            <div id="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </header>
 
         <!--The Layer that will be layed over the content
         so that the content is unclickable while menu is shown-->

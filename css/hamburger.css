@@ -6,6 +6,7 @@ body {
     padding: 0;
     overflow-x:hidden;
     font-family: Arial;
+    font-size: 18px;
 }
 
 /*
@@ -15,8 +16,11 @@ header {
     background-color: #3b5998;
     padding: 10px;
     text-decoration: none;
-    position: relative;
+    position: fixed;
+    width: 100%;
     z-index: 1;
+    -webkit-box-shadow:  0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+    box-shadow:  0px 3px 7px 0px rgba(0, 0, 0, 0.4);
 }
 
 /*
@@ -25,10 +29,12 @@ position absolute isset to cover the whole viewport
 */
 #content {
     background-color: #FFFFFF;
-    bottom: 0;
-    top: 52px;
-    padding: 10px;
-    position: absolute;
+    padding: 52px 10px 10px 10px;
+    position: relative;
+    width: auto;
+    min-height: 1000px;
+    -webkit-box-shadow:  -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
+    box-shadow:  -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
 }
 
 /*
@@ -71,7 +77,8 @@ The navigation container in the background
 nav {
     left: 0px;
     top: 0px;
-    position: absolute;
+    position: fixed;
+    z-index: 0;
     width: 70%;
     height: 100%;
     -webkit-box-sizing: border-box;
