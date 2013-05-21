@@ -1,4 +1,4 @@
-mobile-menu-hamburger
+Mobile Menu Hamburger
 =====================
 
-A hamburger menu for mobile wbsites
+A hamburger menu for mobile websites
