@@ -7,7 +7,7 @@ an up-to-date menu for a mobile website in a typical hamburger style.
 This Template is using only CSS and javascript (jQuery)
 
 See it in action:
-<a href="http://www.ymc.ch/sandbox/hamburger/mobile-menu-demo.html">HAMBURGER MENU LIVE DEMO</a>
+<a target="_blank" href="http://www.ymc.ch/sandbox/hamburger/mobile-menu-demo.html">HAMBURGER MENU LIVE DEMO</a>
 
 
 HowTo
@@ -17,7 +17,7 @@ simply take a look on the demo template
 
 The used Stylesheets are in the folder "css"
 The needed jQuery Code is in the folder "js"
-<a href="http://www.ymc.ch/sandbox/hamburger/mobile-menu-demo.html">LIVE DEMO</a>
+<a target="_blank" href="http://www.ymc.ch/sandbox/hamburger/mobile-menu-demo.html">LIVE DEMO</a>
 
 
 Dependencies
