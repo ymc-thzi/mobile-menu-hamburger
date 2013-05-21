@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Menu Hamburger</title>
+
+    <!--Using jQuery and jQuery UI for display effects-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <!--Using the hamburger menu display code-->
+    <script src="js/hamburger.js"></script>
+
+    <!--Using Media Queries, if the viewport is smaller than 700px use another stylesheet-->
+    <link rel="stylesheet" type="text/css" media="all" href="css/hamburger.css" />
+</head>
+
+<body>
+
+    <!--This wrapping container is used to get the width of the whole content-->
+    <div id="container">
+
+        <!--The mobile navigation Markup hidden via css-->
+        <nav class="mobileNav">
+            <ul>
+                <li><a href="#">menuitem 1</a></li>
+                <li><a href="#">menuitem 2</a></li>
+                <li><a href="#">menuitem 3</a></li>
+                <li><a href="#">menuitem 4</a></li>
+                <li><a href="#">menuitem 5</a></li>
+                <li><a href="#">menuitem 6</a></li>
+            </ul>
+        </nav>
+
+        <!--The Hamburger Button in the Header-->
+        <header>
+            <div id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+
+        <!--The Layer that will be layed over the content
+        so that the content is unclickable while menu is shown-->
+        <div id="contentLayer"></div>
+
+        <!--The content of the site-->
+        <div id="content">
+            <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+            sit amet.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+            sit amet.
+            </p>
+
+        </div>
+
+    </div>
+</body>
+</html>

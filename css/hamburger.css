@@ -1,0 +1,132 @@
+/*
+Setup a basic body
+*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    font-family: Arial;
+}
+
+/*
+Header is relative so z-index: 1 guarantees always displayed on top
+*/
+header {
+    background-color: #3b5998;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+/*
+using background color is important to cover the menu
+position absolute isset to cover the whole viewport
+*/
+#content {
+    background-color: #FFFFFF;
+    bottom: 0;
+    top: 52px;
+    padding: 10px;
+    position: absolute;
+}
+
+/*
+the hamburger button with a little gradient effekt
+*/
+#hamburger {
+    border: 1px solid #374C77;
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    padding: 3px 4px 3px;
+    position: relative;
+    width: 25px;
+    background: #4569b2;
+    background: -moz-linear-gradient(top,  #4569b2 0%, #4062a5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4569b2), color-stop(100%,#4062a5));
+    background: -webkit-linear-gradient(top,  #4569b2 0%,#4062a5 100%);
+    background: -o-linear-gradient(top,  #4569b2 0%,#4062a5 100%);
+    background: -ms-linear-gradient(top,  #4569b2 0%,#4062a5 100%);
+    background: linear-gradient(to bottom,  #4569b2 0%,#4062a5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4569b2', endColorstr='#4062a5',GradientType=0 );
+}
+
+/*
+The white stripes in the hamburger button
+*/
+#hamburger div {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 2px 2px 2px 2px;
+    height: 2px;
+    margin-top: 3px;
+    width: 90%;
+}
+
+/*
+The navigation container in the background
+*/
+nav {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x:hidden;
+    overflow-y:auto ;
+    background: #3e3c3d;
+    background: -moz-linear-gradient(top,  #3e3c3d 0%, #2d2c2d 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3e3c3d), color-stop(100%,#2d2c2d));
+    background: -webkit-linear-gradient(top,  #3e3c3d 0%,#2d2c2d 100%);
+    background: -o-linear-gradient(top,  #3e3c3d 0%,#2d2c2d 100%);
+    background: -ms-linear-gradient(top,  #3e3c3d 0%,#2d2c2d 100%);
+    background: linear-gradient(to bottom,  #3e3c3d 0%,#2d2c2d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e3c3d', endColorstr='#2d2c2d',GradientType=0 );
+}
+
+/*
+Style the navigation menu
+*/
+nav ul {
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+nav li {
+    position: relative;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px solid #222222;
+    border-top: 1px solid #444444;
+    padding: 15px;
+}
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+The Layer that will be layed over the content
+so that the content is unclickable while menu is shown
+*/
+#contentLayer {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 5;
+    width: 30%;
+    height: 100%;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: 0ms;
+    -webkit-transition: 0ms;
+    -webkit-transform: translate3d(0px, 0, 0);
+}
