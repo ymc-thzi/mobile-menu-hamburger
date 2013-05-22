@@ -17,9 +17,6 @@ jQuery(document).ready(function() {
         //set the width of primary content container -> content should not scale while animating
         var contentWidth = jQuery('#content').width();
 
-        //show the menu
-        jQuery('nav').css('display', 'block');
-
         //set the content with the width that it has originally
         jQuery('#content').css('width', contentWidth);
 

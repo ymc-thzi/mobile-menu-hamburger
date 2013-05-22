@@ -124,16 +124,14 @@ The Layer that will be layed over the content
 so that the content is unclickable while menu is shown
 */
 #contentLayer {
-    position: absolute;
-    top: 0px;
-    right: 0;
-    z-index: 5;
-    width: 30%;
-    height: 100%;
     display: none;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    transition: 0ms;
-    -webkit-transition: 0ms;
-    -webkit-transform: translate3d(0px, 0, 0);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    z-index: 5;
+    min-height: 1062px;
 }
