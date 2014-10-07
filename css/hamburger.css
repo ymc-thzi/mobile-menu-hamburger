@@ -1,10 +1,14 @@
+html {
+    overflow-y: scroll;
+}
+
 /*
 Setup a basic body
 */
 body {
     margin: 0;
     padding: 0;
-    overflow-x:hidden;
+    overflow-x: hidden;
     font-family: Arial;
     font-size: 18px;
 }
@@ -19,8 +23,8 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1;
-    -webkit-box-shadow:  0px 3px 7px 0px rgba(0, 0, 0, 0.4);
-    box-shadow:  0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
 }
 
 /*
@@ -32,9 +36,9 @@ position absolute isset to cover the whole viewport
     padding: 52px 10px 10px 10px;
     position: relative;
     width: auto;
-    min-height: 1000px;
-    -webkit-box-shadow:  -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
-    box-shadow:  -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
+    height: 100%;
+    -webkit-box-shadow: -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
 }
 
 /*
@@ -50,13 +54,13 @@ the hamburger button with a little gradient effekt
     position: relative;
     width: 25px;
     background: #4569b2;
-    background: -moz-linear-gradient(top,  #4569b2 0%, #4062a5 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4569b2), color-stop(100%,#4062a5));
-    background: -webkit-linear-gradient(top,  #4569b2 0%,#4062a5 100%);
-    background: -o-linear-gradient(top,  #4569b2 0%,#4062a5 100%);
-    background: -ms-linear-gradient(top,  #4569b2 0%,#4062a5 100%);
-    background: linear-gradient(to bottom,  #4569b2 0%,#4062a5 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4569b2', endColorstr='#4062a5',GradientType=0 );
+    background: -moz-linear-gradient(top, #4569b2 0%, #4062a5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4569b2), color-stop(100%, #4062a5));
+    background: -webkit-linear-gradient(top, #4569b2 0%, #4062a5 100%);
+    background: -o-linear-gradient(top, #4569b2 0%, #4062a5 100%);
+    background: -ms-linear-gradient(top, #4569b2 0%, #4062a5 100%);
+    background: linear-gradient(to bottom, #4569b2 0%, #4062a5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4569b2', endColorstr='#4062a5', GradientType=0);
 }
 
 /*
@@ -75,6 +79,7 @@ The white stripes in the hamburger button
 The navigation container in the background
 */
 nav {
+    opacity: 0;
     left: 0px;
     top: 0px;
     position: fixed;
@@ -84,16 +89,16 @@ nav {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    overflow-x:hidden;
-    overflow-y:auto ;
+    overflow-x: hidden;
+    overflow-y: auto;
     background: #3e3c3d;
-    background: -moz-linear-gradient(top,  #3e3c3d 0%, #2d2c2d 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3e3c3d), color-stop(100%,#2d2c2d));
-    background: -webkit-linear-gradient(top,  #3e3c3d 0%,#2d2c2d 100%);
-    background: -o-linear-gradient(top,  #3e3c3d 0%,#2d2c2d 100%);
-    background: -ms-linear-gradient(top,  #3e3c3d 0%,#2d2c2d 100%);
-    background: linear-gradient(to bottom,  #3e3c3d 0%,#2d2c2d 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e3c3d', endColorstr='#2d2c2d',GradientType=0 );
+    background: -moz-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e3c3d), color-stop(100%, #2d2c2d));
+    background: -webkit-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
+    background: -o-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
+    background: -ms-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
+    background: linear-gradient(to bottom, #3e3c3d 0%, #2d2c2d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3e3c3d', endColorstr='#2d2c2d', GradientType=0);
 }
 
 /*
@@ -114,6 +119,7 @@ nav li {
     border-top: 1px solid #444444;
     padding: 15px;
 }
+
 nav li a {
     color: #fff;
     text-decoration: none;
@@ -133,5 +139,4 @@ so that the content is unclickable while menu is shown
     top: 0;
     width: 30%;
     z-index: 5;
-    min-height: 1062px;
 }
