@@ -18,7 +18,7 @@ See it in action:
 HowTo
 ===
 simply take a look on the demo template
-/mobile-menu-demo.html
+<a href="https://github.com/ymc-thzi/mobile-menu-hamburger/blob/master/mobile-menu-demo.html">mobile-menu-demo.html</a>
 
 The used Stylesheets are in the folder "css"
 The needed jQuery Code is in the folder "js"
