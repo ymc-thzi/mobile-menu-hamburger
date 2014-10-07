@@ -6,8 +6,14 @@ an up-to-date menu for a mobile website in a typical hamburger style.
 
 This Template is using only CSS and javascript (jQuery)
 
+Read the full tutorial on:
+http://www.ymc.ch/en/how-to-make-a-hamburger-a-menu-for-mobile-websites
+
 See it in action:
 <a target="_blank" href="http://www.ymc.ch/sandbox/hamburger/mobile-menu-demo.html">HAMBURGER MENU LIVE DEMO</a>
+
+<img src="http://www.ymc.ch/wp-content/uploads/2014/10/closed.png" style="width:250px; margin-right: 30px">
+<img src="http://www.ymc.ch/wp-content/uploads/2014/10/opened.png" style="width:250px">
 
 
 HowTo
