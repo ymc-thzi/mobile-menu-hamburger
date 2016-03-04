@@ -32,3 +32,25 @@ v2.1.1
 
 jQuery UI 
 v1.11.1
+
+
+************************************************************************************************
+################################################################################################
+************************************************************************************************
+Read Me extension for Github Resume with The Hamburger Menu.....
+
+Please note I have altered code to be used for a Github resume website.
+
+***************User must edit site to fit their needs.**************************
+
+please make sure to leave all link attributes intact or site can malfunction.
+
+when editing most users will need to edit work history and education, some can go further by adding more to the  list as needed. based for easy customization for users. 
+
+hamburger menu handles iframe links <b>do not alter these links</b> unless you are very familiar with how iframes work and function.
+
+if you would like to see it in action please feel free to visit www.jeremyahenry.com.
+
+as of march 4th, 2016 I am currently pointing to my linkedin profile.
+
+as i build this repo up. and finish the small details before making it fully public.
