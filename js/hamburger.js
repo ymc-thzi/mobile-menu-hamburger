@@ -33,7 +33,9 @@ jQuery(document).ready(function () {
         });
 
         //set margin for the whole container with a jquery UI animation
-        jQuery("#container").animate({"marginLeft": ["70%", 'easeOutExpo']}, {
+        //use stop(true) to fix jQuery overlapping issue with animation
+        //if the first argument is true, removes all animations in the queue
+        jQuery("#container").stop(true).animate({"marginLeft": ["70%", 'easeOutExpo']}, {
             duration: 700
         });
 
@@ -46,7 +48,9 @@ jQuery(document).ready(function () {
         jQuery('#container').unbind('touchmove');
 
         //set margin for the whole container back to original state with a jquery UI animation
-        jQuery("#container").animate({"marginLeft": ["-1", 'easeOutExpo']}, {
+        //use stop(true) to fix jQuery overlapping issue with animation
+        //if the first argument is true, removes all animations in the queue
+        jQuery("#container").stop(true).animate({"marginLeft": ["-1", 'easeOutExpo']}, {
             duration: 700,
             complete: function () {
                 jQuery('#content').css('width', 'auto');
