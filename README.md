@@ -9,6 +9,8 @@ This Template is using only CSS and javascript (jQuery)
 See it in action:
 <a target="_blank" href="http://ymc-thzi.github.io/mobile-menu-hamburger/mobile-menu-demo.html">HAMBURGER MENU LIVE DEMO</a>
 
+<img src="https://raw.githubusercontent.com/ymc-thzi/mobile-menu-hamburger/master/mobile-hamburger.gif" />
+
 HowTo
 ===
 simply take a look on the demo template
