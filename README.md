@@ -1,4 +1,4 @@
-Mobile Menu Hamburger
+EPIC Mobile Menu Hamburger
 ===
 
 A hamburger menu for mobile websites. A demo how to create
